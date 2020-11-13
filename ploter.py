@@ -395,7 +395,8 @@ class main_fenetre(object):
     def helper(self):
         """Fonction displaying the help"""
 
-        message_aide = "Not done yet."
+        message_aide = """Not done yet.\n This program is available on https://github.com/Ielr/Opac-plotter-cn4 git repository.\n
+        Please contact directly the author in case of problems."""
 
         fen_help = tk.Tk()
         fen_help.title("The help screen")
