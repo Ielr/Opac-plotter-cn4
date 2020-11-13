@@ -9,7 +9,7 @@ tkinter, matplotlib, numpy, pickle
 A git based repository: opacplot2.
 
 ```shell
-pip install git+https://github.com/flash-center/opacplot2
+pip3 install git+https://github.com/flash-center/opacplot2
 ```
 
 # Usage
