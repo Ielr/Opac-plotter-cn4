@@ -324,14 +324,14 @@ class main_fenetre(object):
                 self.list_plot.append(locplot_list)
                 locplot_list = list()
                 locplot_list.append(loc_text+str(self.optable.temps[pos-1]) + " eV")
-                locplot_list.append(self.optable.temps)
+                locplot_list.append(self.optable.dens)
                 locplot_list.append(np.array(self.optable.pion)[:,pos])
                 self.list_plot_af.insert('end',loc_text)
             else:
                 pos = searchsorted(self.optable.opac_bounds,float(self.list_const["energy"].get()))
 
                 l = list()
-                for i in self.optable.temps:
+                for i in self.optable.dens:
                     a = l_list.interp(i,float(self.list_const["temperature"].get()))
                     l.append([a[pos-1],a[pos]])
                 l = np.array(l)
